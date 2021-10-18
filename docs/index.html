@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moving Block</title>
+</head>
+<body>
+    <header>
+        <section class="timer">
+            <h1 class="seconds">Score: 0</h1>
+        </section>
+        <section class="lives">
+            <h1 class="numLives"></h1>
+        </section>
+    </header>
+    <main class="board">
+        <img src="data:image/png;base64,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" class="player">
+        <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-monster-halloween-justicon-lineal-color-justicon.png" class="chaser"/>
+        <img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-monster-halloween-flatart-icons-lineal-color-flatarticons-1.png" class="chaser"/>
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-monster-halloween-flatart-icons-flat-flatarticons.png" class="chaser"/>
+        <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-monster-video-game-tulpahn-outline-color-tulpahn.png" class="chaser"/>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
